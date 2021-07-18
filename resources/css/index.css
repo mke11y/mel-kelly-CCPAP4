@@ -1,0 +1,103 @@
+@import url(normalize.css);
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+h2 {
+    font-family:"Reenie Beanie";
+    font-size: 50px;
+}
+html {
+    background-color: rgb(143, 201, 174);
+    min-height: 100vh;
+
+}
+.navbar {
+    height: 75px; 
+    background-color: white;
+    padding: 25px;
+    display:flex;
+    align-items: center;
+}
+.logo{
+    height: 25px; 
+
+}
+.centreAlign{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   text-align: center;
+   flex-direction: column;
+}
+.centreAlign *{
+    margin: 0;
+}
+.howAreYou{
+    height: calc(60vh - 100px);
+   opacity: 0;
+    animation: fadeIn 1s linear 0.3s 1 normal forwards;
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    margin: auto;
+    margin-top: 100px;
+
+
+}
+.emotionbutton {
+    background-color: rgb(25, 87, 49);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin-top: 25px;
+    font-size: 25px;
+}
+.emotionbutton:hover {
+    color: rgb(25, 87, 49);
+    background-color: rgb(245, 186, 226);
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.sectionbody{
+    height: 1000px
+}
+
+.advice {
+    background-color: rgb(194, 107, 166);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    height:fit-content
+}
+.howAreYouSection{
+    background-image: url(../images/leafy.png);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: bottom;
+    background-size: 30%;
+}
+
+.theSupport{
+    width: 500px;
+    background-color: white;
+    padding: 50px;
+    margin: 50px;
+}
+footer{
+    background-color: white;
+}
+.helpRef:visited{
+    text-decoration: none;
+}
