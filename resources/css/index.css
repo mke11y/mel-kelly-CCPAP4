@@ -13,7 +13,7 @@ html {
 
 }
 .navbar {
-    height: 75px; 
+    height: 13vh; 
     background-color: white;
     padding: 25px;
     display:flex;
@@ -35,15 +35,13 @@ html {
     margin: 0;
 }
 .howAreYou{
-    height: calc(60vh - 100px);
-   opacity: 0;
+    height: 50%;
+    opacity: 0;
     animation: fadeIn 1s linear 0.3s 1 normal forwards;
     background-color: rgb(255, 255, 255);
     width: 60%;
     margin: auto;
     margin-top: 100px;
-
-
 }
 .emotionbutton {
     background-color: rgb(25, 87, 49);
@@ -54,6 +52,7 @@ html {
     cursor: pointer;
     margin-top: 25px;
     font-size: 25px;
+    display:inline-block;
 }
 .emotionbutton:hover {
     color: rgb(25, 87, 49);
@@ -68,9 +67,16 @@ html {
     }
 }
 
-.sectionbody{
-    height: 1000px
+.mainSection{
+    background-image: url(../images/leafy.png);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: bottom;
+    background-size: 30%;
+    overflow: hidden;
+    height: 80vh;
 }
+
 
 .advice {
     background-color: rgb(194, 107, 166);
@@ -81,13 +87,6 @@ html {
     text-align: center;
     height:fit-content
 }
-.howAreYouSection{
-    background-image: url(../images/leafy.png);
-    background-repeat: no-repeat;
-    background-position-x: 10px;
-    background-position-y: bottom;
-    background-size: 30%;
-}
 
 .theSupport{
     width: 500px;
@@ -95,9 +94,21 @@ html {
     padding: 50px;
     margin: 50px;
 }
-footer{
+.footerSection{
     background-color: white;
+    height: 7vh;
+    padding: 5px;
+}
+.helpRef{
+    font-weight: bold;
+    color: black;
+    float: right;
+}
+.helpRef:hover{
+    color: rgb(245, 186, 226);
+    background-color: rgb(25, 87, 49);
 }
 .helpRef:visited{
     text-decoration: none;
 }
+
